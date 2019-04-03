@@ -1,7 +1,13 @@
 <%- include('./partials/header') %>
 
-<h1>Welcome to the Express Demo!</h1>
+<div class="parallax" id="firstBackground"></div>
 
-<img class="welcome-poster" src="/images/a350.jpeg" alt="A350">
+<div style="height:1000px;background-color:black;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+<div class="parallax" id="secondBackground"></div>
 
 <%- include('./partials/footer') %>
