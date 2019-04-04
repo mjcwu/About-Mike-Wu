@@ -57,7 +57,7 @@ body {
 } 
 
 .aboutMikeSection{
-  background-color:white;
+  background-color: rgb(238, 238, 238);
   display: flex;
   flex-direction: column;
   margin-left: 15%;
@@ -80,12 +80,14 @@ body {
 }
 
 .mikeBackground{
-  margin: 0px;
+  margin: 0px 0px 20px 0px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
+
 .mikeDetails{
-  background-color:white;
   display: flex;
   flex-direction: column;
 }
@@ -100,8 +102,18 @@ body {
 #skillSetTitle, #educationTitle {
   margin: 0px;
   color: blue;
+  font-weight: bold;
 }
 
-#skillList{
+#skillList, #educationList{
   color: #50555c;
+}
+
+.skillLi{
+  color: orange;
+  font-weight: bold;
+}
+
+li{
+  margin-bottom: 5px;
 }
