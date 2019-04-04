@@ -1,13 +1,32 @@
 <%- include('./partials/header') %>
 
-<div class="parallax" id="firstBackground"></div>
-
-<div style="height:1000px;background-color:black;font-size:36px">
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
+<div id="firstBackground" class="parallax">
+  <div id="nameSection">
+    <span>hi, this is</span>
+    <strong id="nameTitle"><span>MIKE WU</span></strong>
+  </div>
 </div>
 
-<div class="parallax" id="secondBackground"></div>
+<div class="aboutMikeSection">
+  <div class="mikeHeader">
+    <strong class="mikeHeader">About Mike</strong>
+  </div>
+  <div class="mikeBackground">
+    <p style="margin:0px"> 
+      I am a full-stack web developer who enjoys solving problems and learning new trending technologies. After working at engineering industry for several years, I have developed strong problem solving skill and management skill to deliver a production.
+    </p>
+  </div>
+  <div class="mikeDetails">
+    <div class="mikeEducation">
+      <strong style="margin: 0px">EDUCATION</strong>
+      <p style="margin:0px">
+        I am a full-stack web developer who enjoys solving problems and learning new trending technologies. After working at engineering industry for several years, I have developed strong problem solving skill and management skill to deliver a production that is on time.
+      </p>
+    </div>
+  </div>
+  
+</div>
+
+<div id="secondBackground" class="parallax" ></div>
 
 <%- include('./partials/footer') %>

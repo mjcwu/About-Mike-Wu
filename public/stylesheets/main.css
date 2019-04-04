@@ -6,9 +6,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #001F3F;
-  font-size: 110%; */
+  color: #777;
+  font-size: 110%;
 }
+
+/* PARALLAX CSS */
 
 .parallax {
   /* Set a specific height */
@@ -22,9 +24,85 @@ body {
 }
 
 #firstBackground{
-  background-image: url('../images/a350.jpeg');
+  background-image: url('../images/mikeHiking.jpeg');
 }
 
 #secondBackground{
+  /* opacity: 0.80; */
   background-image: url('../images/wildBird.jpeg');
 }
+
+/* ----------- SECTION CSS ----------- */
+
+#nameSection {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+#nameSection > *{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 15px;
+}
+
+#nameTitle {
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 10px;
+} 
+
+
+#nameTitle:after {
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-top: 1px solid white;
+  z-index: -1;
+} 
+
+.aboutMikeSection{
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+
+.aboutMikeSection > div{
+  margin: 5px;
+  font-size: 20px;
+}
+
+.mikeHeader{
+  margin: 0px;
+  text-align: center;
+}
+
+.mikeBackground{
+  margin: 0px;
+  text-align: center;
+}
+
+.mikeDetails{
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+}
+
+.mikeDetails > div{
+  width: 100%;
+  margin: 5px;
+  text-align: left;
+  font-size: 15px;
+}
+
+
