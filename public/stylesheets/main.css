@@ -8,14 +8,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: black;
   font-size: 110%;
+  /* min-width: 700px;
+   width: auto !important;
+   width: 700px;  */
 }
 
-/* PARALLAX CSS */
+/* ----------- parallax css ----------- */
 
 .parallax {
-  /* Set a specific height */
-  min-height: 500px; 
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -25,11 +25,30 @@ body {
 
 #firstBackground{
   background-image: url('../images/mikeHiking.jpeg');
+  min-height: 500px; 
 }
 
 #secondBackground{
   /* opacity: 0.80; */
-  background-image: url('../images/wildBird.jpeg');
+  background-image: url('../images/meNaircraft.JPG');
+  height: 535px; 
+  background-position: left;
+  background-size: contain;
+}
+
+/* ----------- general section css ----------- */
+
+#firstSection{
+  background-color: rgb(238, 238, 238);
+}
+
+.content{
+  margin: 0 auto;
+  width: 100%;
+}
+
+#secondSection{
+  background-color: white;
 }
 
 /* ----------- SECTION CSS ----------- */
@@ -57,7 +76,7 @@ body {
 } 
 
 .aboutMikeSection{
-  background-color: rgb(238, 238, 238);
+  
   display: flex;
   flex-direction: column;
   margin-left: 15%;
@@ -86,7 +105,6 @@ body {
   flex-direction: column;
 }
 
-
 .mikeDetails{
   display: flex;
   flex-direction: column;
@@ -96,13 +114,19 @@ body {
   width: 100%;
   margin: 5px;
   text-align: left;
-  font-size: 11px;
+  font-size: 12px;
 }
 
-#skillSetTitle, #educationTitle {
+#skillSetTitle, #educationTitle, #expTitle {
   margin: 0px;
   color: blue;
   font-weight: bold;
+  font-family: "Brandon Grotesque";
+}
+
+.skillSubTitle{
+  margin: 10px;
+  font-family: "Brandon Grotesque";
 }
 
 #skillList, #educationList{
@@ -116,4 +140,47 @@ body {
 
 li{
   margin-bottom: 5px;
+}
+
+#expSection{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+#expSection > div{
+  font-size: 12px;
+}
+
+#expList{
+  margin-left: 45%; 
+  margin-top: 30px;
+  width: 45%;
+  background-color: rgb(238, 238, 238);
+  padding: 10px;
+}
+
+#expGroup{
+  margin-top: 5px;
+}
+
+.expPosition{
+  color: #3CB371;
+  font-weight: bold;
+}
+
+.companyDetail{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+
+.companyLogo{
+  width: 150px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.expUl{
+  color: #50555c;
 }
