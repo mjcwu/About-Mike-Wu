@@ -25,30 +25,38 @@ body {
 
 #firstBackground{
   background-image: url('../images/mikeHiking.jpeg');
-  min-height: 500px; 
+  min-height: 870px; 
 }
 
 #secondBackground{
   /* opacity: 0.80; */
   background-image: url('../images/meNaircraft.JPG');
-  height: 535px; 
+  height: 800px; 
   background-position: left;
   background-size: contain;
+}
+
+#thirdBackground{
+  background-image: url('../images/vanNightScene.JPG');
+  min-height: 900px; 
 }
 
 /* ----------- general section css ----------- */
 
 #firstSection{
   background-color: rgb(238, 238, 238);
+  padding: 30px;
+  /* background-color: white; */
+}
+
+#secondBackground{
+  /* background-color: rgb(238, 238, 238); */
+  background-color: white;
 }
 
 .content{
   margin: 0 auto;
   width: 100%;
-}
-
-#secondSection{
-  background-color: white;
 }
 
 /* ----------- SECTION CSS ----------- */
@@ -66,12 +74,12 @@ body {
   display: flex;
   flex-direction: column;
   color: #fff;
-  font-size: 15px;
+  font-size: 30px;
 }
 
 #nameTitle {
   color: #fff;
-  font-size: 25px;
+  font-size: 65px;
   letter-spacing: 10px;
 } 
 
@@ -79,13 +87,13 @@ body {
   
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
-  margin-right: 15%;
-  width: 70%;
+  margin-left: 22%;
+  margin-right: 22%;
+  width: 56%;
 }
 
 .aboutMikeSection > div{
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .mikeHeader{
@@ -95,7 +103,7 @@ body {
 }
 
 #mikeHeaderTitle{
-  font: 20px;
+  font-size: 25px;
 }
 
 .mikeBackground{
@@ -103,6 +111,11 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+
+#backgroundDescription{
+  font-size: 22px;
+  margin: 0px;
 }
 
 .mikeDetails{
@@ -114,18 +127,20 @@ body {
   width: 100%;
   margin: 5px;
   text-align: left;
-  font-size: 12px;
+  font-size: 17px;
 }
 
-#skillSetTitle, #educationTitle, #expTitle {
+#skillSetTitle, #educationTitle, #expTitle, #portfolioHeader {
   margin: 0px;
   color: blue;
   font-weight: bold;
   font-family: "Brandon Grotesque";
+  font-size: 24px;
 }
 
 .skillSubTitle{
   margin: 10px;
+  font-size: 17px;
   font-family: "Brandon Grotesque";
 }
 
@@ -136,6 +151,7 @@ body {
 .skillLi{
   color: orange;
   font-weight: bold;
+  font-size: 18px;
 }
 
 li{
@@ -145,23 +161,23 @@ li{
 #expSection{
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  padding: 20px;
 }
 
-#expSection > div{
-  font-size: 12px;
+#expSection, #portfolioGroup > div{
+  font-size: 17px;
 }
 
 #expList{
   margin-left: 45%; 
   margin-top: 30px;
   width: 45%;
-  background-color: rgb(238, 238, 238);
-  padding: 10px;
+  /* background-color: white; */
+  padding: 25px 25px 25px 50px;
 }
 
 #expGroup{
-  margin-top: 5px;
+  margin-top: 25px;
 }
 
 .expPosition{
@@ -178,9 +194,28 @@ li{
 .companyLogo{
   width: 150px;
   margin: 20px;
-  border-radius: 15px;
+  border-radius: 17px;
 }
 
-.expUl{
-  color: #50555c;
+#portfolioGroup{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 7% 30px 7%;
+}
+
+#portfolioContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#portfolioContent > div{
+  margin: 10px;
+  width: 28%;
+  text-align: left;
+}
+
+#portfolioHeader{
+  margin-bottom: 10px;
 }
