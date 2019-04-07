@@ -31,7 +31,7 @@ body {
 #secondBackground{
   /* opacity: 0.80; */
   background-image: url('../images/meNaircraft.JPG');
-  height: 800px; 
+  height: 1100px; 
   background-position: left;
   background-size: contain;
 }
@@ -45,7 +45,7 @@ body {
 
 #firstSection{
   background-color: rgb(238, 238, 238);
-  padding: 30px;
+  padding: 2%;
   /* background-color: white; */
 }
 
@@ -84,7 +84,6 @@ body {
 } 
 
 .aboutMikeSection{
-  
   display: flex;
   flex-direction: column;
   margin-left: 22%;
@@ -130,7 +129,7 @@ body {
   font-size: 17px;
 }
 
-#skillSetTitle, #educationTitle, #expTitle, #portfolioHeader {
+#skillSetTitle, #educationTitle, #expTitle{
   margin: 0px;
   color: blue;
   font-weight: bold;
@@ -149,7 +148,7 @@ body {
 }
 
 .skillLi{
-  color: orange;
+  color: #FF7F50;
   font-weight: bold;
   font-size: 18px;
 }
@@ -161,7 +160,6 @@ li{
 #expSection{
   display: flex;
   flex-direction: row;
-  padding: 20px;
 }
 
 #expSection, #portfolioGroup > div{
@@ -169,15 +167,14 @@ li{
 }
 
 #expList{
-  margin-left: 45%; 
-  margin-top: 30px;
-  width: 45%;
   /* background-color: white; */
-  padding: 25px 25px 25px 50px;
+  padding: 5% 8% 5% 8%;
 }
 
 #expGroup{
   margin-top: 25px;
+  display: flex;
+  flex-direction: row;
 }
 
 .expPosition{
@@ -187,7 +184,7 @@ li{
 
 .companyDetail{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 25px;
 }
 
@@ -201,21 +198,78 @@ li{
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 30px 7% 30px 7%;
+  margin-left: 40%; 
+  margin-right: 2%;
+  padding: 40px 10px 20px 20px;
 }
 
 #portfolioContent{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #portfolioContent > div{
-  margin: 10px;
-  width: 28%;
   text-align: left;
 }
 
-#portfolioHeader{
+#portfolioHeader {
   margin-bottom: 10px;
+  color: blue;
+  font-weight: bold;
+  font-family: "Brandon Grotesque";
+  font-size: 24px;
+  text-align: left;
+}
+
+.portfolioDiv{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 10px 30px 10px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.portfolioTitle{
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.portTitle{
+  color: #228B22;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.portfolioImg{
+  width: 50%;
+  height: 250px;
+  margin-right: 20px;
+  border-radius: 20px;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#firstPortImg00{
+  background-image: url('../images/firstPortImg00.png');
+}
+
+.portfolioDescription{
+  width: 50%;
+  margin-left: 10px;
+  padding-left: 20px;
+}
+
+.portfolioDetail{
+  color: #50555c;
+}
+
+#secPortImg00{
+  background-image: url('../images/secPortImg00.png');
+}
+
+#thirdPortImg00{
+  background-image: url('../images/thirdPortImg00.png');
 }
