@@ -15,7 +15,7 @@
       </div>
       <div class="mikeBackground">
         <div id="profilePic">
-          <img src="../images/profilePic.jpeg" alt="Profile Pic" style="width:150px; border-radius: 15px;">
+          <img src="../images/profilePic.jpg" alt="Profile Pic" style="width:400px; border-radius: 15px;">
         </div>
         <div >
           <p id="backgroundDescription"> 
@@ -25,14 +25,14 @@
       </div>
       <div class="mikeDetails">
         <div class="mikeSkillSet">
-          <span id='skillSetTitle'>Skill Set</span>
+          <span id='skillSetTitle'>Skills & Tools</span>
           <div id="skillList">
             <div id="softwareSkill">
               <h4 class="skillSubTitle">Software</h4>
               <ul style="margin:0px 0px 5px 0px">
                 <li>  <span class="skillLi">Languages & Tech: </span> NodeJS, Ruby, JavaScripts, JSON, HTML5, CSS3, AJAX</li>
                 <li>  <span class="skillLi">Framework & Libraries: </span> Rails, jQuery, Bootstrap, ReactJS, ExpressJS, SASS</li>
-                <li>  <span class="skillLi">Database management: </span> PostgresSQAL, MongoDB</li>
+                <li>  <span class="skillLi">Database management: </span> PostgresSQL, MongoDB</li>
                 <li>  <span class="skillLi">Code Test: </span> expect, mocha</li>
                 <li>  <span class="skillLi">Version Control: </span> Git, Github</li>
               </ul>
@@ -67,53 +67,53 @@
   </div>
 </div>
 
-
 <div id="secondBackground" class="parallax" >
   <div class="content">
     <div id="portfolioGroup">
       <div id="portfolioHeader">
-        <span id="portfolioHeader">Some Projects</span>
+        <span>Here's Some Projects I've Done</span>
       </div>
       <div id="portfolioContent">
         <div class="portfolioDiv" id="firstPortfolio">
-          <div class="portfolioImg" id=firstPortImg00></div>
+          <div class="portImg" >
+            <a href="https://chittercat.herokuapp.com/" target="_blank">
+              <img src="../images/firstPortImg00.png" alt="chitter-cat" class="portImgStyle">
+            </a>
+          </div>
           <div class="portfolioDescription">
             <div class="portfolioTitle">
               <span class='portTitle'>Chitter-Cat</span></div>
             <div class="portfolioDetail">
               <p>
-              A chat website that allows user to pick a nick name and join a chat room.
+              A chat website that is able to do a live chat between friends in the same room. The user is able to choose the display name and a chat room to join. I created this app to learn more on express.js and how socket.io interact with front-end and back-end<br> <br>
+              • Express.js front-end and back-end <br>
+              • Scoket.io <br>
+              • Expect and mocha for code testing 
               </p>
             </div>
           </div>
         </div>
 
         <div class="portfolioDiv" id="secPortfolio">
-          <div class="portfolioImg" id=secPortImg00></div>
+          <div class="portImg" >
+            <a href="https://core-aviation.herokuapp.com/" target="_blank">
+              <img src="../images/secPortImg00.png" alt="Core-Aviation" class="portImgStyle">
+            </a>
+          </div>
           <div class="portfolioDescription">
             <div class="portfolioTitle">
               <span class='portTitle'>Core-Aviation</span></div>
             <div class="portfolioDetail">
               <p>
-              A chat website that allows user to pick a nick name and join a chat room.
+              As an aviation enthusiast and a photographer, I am always chasing different types of aircrafts and I am always wondering how other website track flights in the air. I decided to create an app on my own to understand the magic running behind the scene. <br><br>
+              This is an interactive website that is able to do live flight tracking around the world. The user is able to track flight details such as departure, arrival, arrival time etc. <br> <br>
+              • React front end <br>
+              • Live flight tracking around the world <br>
+              • Detail information of flight
               </p>
             </div>
           </div>
         </div>
-
-        <div class="portfolioDiv" id="thirdPortfolio">
-          <div class="portfolioImg" id=thirdPortImg00></div>
-          <div class="portfolioDescription">
-            <div class="portfolioTitle">
-              <span class='portTitle'>Core-Aviation</span></div>
-            <div class="portfolioDetail">
-              <p>
-              A chat website that allows user to pick a nick name and join a chat room.
-              </p>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
@@ -123,13 +123,15 @@
   <div class="content">
     <div id="expSection">
       <div id="expList">
-        <span id='expTitle'>Professional Experience</span> <br>
+        <div id='expTitle'>
+          <span>Professional Experience</span> <br>
+        </div>
         <div id="expGroup">
           <div class="companyDetail" id="stemcell">
             <div id="stemcell-logo">
               <img src="../images/STI-Logo.png" alt="STI-Logo" class="companyLogo">
             </div>
-            <div id="stemcell-detail">
+            <div class="companyExp" id="stemcell-detail">
               <span class="skillLi">Stemcell Technologies</span> <br>
               <span class="expPosition">Mechanical Engineer</span> <br>
               Apr 2017 - Sep 2018 <br>
@@ -143,9 +145,9 @@
 
           <div class="companyDetail" id="ronWong">
             <div id="ronWong-logo">
-              <img src="../images/RW-Logo.png" alt="STI-Logo" class="companyLogo">
+              <img src="../images/RW-Logo.png" alt="RW-Logo" class="companyLogo">
             </div>
-            <div id="ronWong-detail">
+            <div class="companyExp" id="ronWong-detail">
               <span class="skillLi">Ron Wong Associates</span> <br>
               <span class="expPosition">Mechanical Engineer</span> <br>
               Jan 2013 - Jan 2016 <br>

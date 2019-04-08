@@ -25,20 +25,20 @@ body {
 
 #firstBackground{
   background-image: url('../images/mikeHiking.jpeg');
-  min-height: 870px; 
+  min-height: 97vh; 
 }
 
 #secondBackground{
   /* opacity: 0.80; */
-  background-image: url('../images/meNaircraft.JPG');
-  height: 1100px; 
+  background-image: url('../images/eagle.JPG');
+  height: 100vh; 
   background-position: left;
   background-size: contain;
 }
 
 #thirdBackground{
   background-image: url('../images/vanNightScene.JPG');
-  min-height: 900px; 
+  min-height: 500px; 
 }
 
 /* ----------- general section css ----------- */
@@ -96,7 +96,7 @@ body {
 }
 
 .mikeHeader{
-  margin: 20px 5px 5px 5px;
+  margin: 3% 5px 5px 5px;
   text-align: center;
   color: black;
 }
@@ -106,7 +106,7 @@ body {
 }
 
 .mikeBackground{
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 3% 0px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -124,22 +124,23 @@ body {
 
 .mikeDetails > div{
   width: 100%;
-  margin: 5px;
+  margin: 3px;
   text-align: left;
   font-size: 17px;
 }
 
-#skillSetTitle, #educationTitle, #expTitle{
+#skillSetTitle, #educationTitle, #expTitle, #portfolioHeader{
   margin: 0px;
   color: blue;
   font-weight: bold;
   font-family: "Brandon Grotesque";
   font-size: 24px;
+  text-align: center;
 }
 
 .skillSubTitle{
-  margin: 10px;
-  font-size: 17px;
+  margin: 2%;
+  font-size: 20px;
   font-family: "Brandon Grotesque";
 }
 
@@ -154,7 +155,7 @@ body {
 }
 
 li{
-  margin-bottom: 5px;
+  margin-bottom: 2%;
 }
 
 #expSection{
@@ -162,19 +163,20 @@ li{
   flex-direction: row;
 }
 
-#expSection, #portfolioGroup > div{
+#expSection > div{
   font-size: 17px;
 }
 
 #expList{
   /* background-color: white; */
-  padding: 5% 8% 5% 8%;
+  padding: 5% 10% 5% 10%;
 }
 
 #expGroup{
   margin-top: 25px;
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .expPosition{
@@ -185,19 +187,35 @@ li{
 .companyDetail{
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
+  margin: 25px;
+  width: 50%;
 }
 
 .companyLogo{
   width: 150px;
-  margin: 20px;
+  height: 100px;
+  margin: 20px 20px 20px 0px;
   border-radius: 17px;
+  padding: 20px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 20px;
+}
+
+.companyExp{
+  padding: 20px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 20px;
+}
+
+.expUl{
+  color: #50555c;
 }
 
 #portfolioGroup{
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-content: center;
   margin-left: 40%; 
   margin-right: 2%;
   padding: 40px 10px 20px 20px;
@@ -210,15 +228,6 @@ li{
 }
 
 #portfolioContent > div{
-  text-align: left;
-}
-
-#portfolioHeader {
-  margin-bottom: 10px;
-  color: blue;
-  font-weight: bold;
-  font-family: "Brandon Grotesque";
-  font-size: 24px;
   text-align: left;
 }
 
@@ -239,21 +248,22 @@ li{
 .portTitle{
   color: #228B22;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
 }
 
-.portfolioImg{
+.portImg{
   width: 50%;
   height: 250px;
   margin-right: 20px;
-  border-radius: 20px;
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-#firstPortImg00{
-  background-image: url('../images/firstPortImg00.png');
+.portImgStyle{
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .portfolioDescription{
@@ -264,12 +274,4 @@ li{
 
 .portfolioDetail{
   color: #50555c;
-}
-
-#secPortImg00{
-  background-image: url('../images/secPortImg00.png');
-}
-
-#thirdPortImg00{
-  background-image: url('../images/thirdPortImg00.png');
 }
