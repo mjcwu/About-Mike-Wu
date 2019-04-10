@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -39,7 +43,7 @@ a {
 
 #thirdBackground{
   background-image: url('../images/vanNightScene.JPG');
-  min-height: 500px; 
+  min-height: 100vh; 
 }
 
 /* ----------- general section css ----------- */
@@ -221,16 +225,12 @@ li{
 
 #expSection{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 5% 10% 5% 10%;
 }
 
 #expSection > div{
   font-size: 17px;
-}
-
-#expList{
-  /* background-color: white; */
-  padding: 5% 10% 5% 10%;
 }
 
 #expGroup{
@@ -249,20 +249,21 @@ li{
   display: flex;
   flex-direction: column;
   margin: 25px;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .companyLogo{
-  width: 150px;
-  height: 100px;
-  margin: 20px 20px 20px 0px;
+  width: 25%;
+  height: 100%;
+  margin: 2% 2% 2% 0px;
   border-radius: 17px;
-  padding: 20px;
+  /* padding: 20px; */
   background-color: rgb(238, 238, 238);
   border-radius: 20px;
 }
 
 .companyExp{
+  margin: 2% 2% 2% 0px;
   padding: 20px;
   background-color: rgb(238, 238, 238);
   border-radius: 20px;
@@ -271,6 +272,9 @@ li{
 .expUl{
   color: #50555c;
 }
+
+
+/* ------------ projects section  ------------*/
 
 #portfolioGroup{
   display: flex;
@@ -343,4 +347,19 @@ li{
 
 .portfolioDetail{
   color: #50555c;
+}
+
+/* ------------- Mobile CSS  ------------- */
+@media only screen and (max-width: 1300px) {
+  /* For mobile phones: */
+  #portfolioGroup {
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  /* For mobile phones: */
+  #portfolioGroup {
+    margin-left: 2%;
+  }
 }
