@@ -264,11 +264,16 @@ li{
 }
 
 .companyLogo{
+  max-width: 100%;
   width: 250px;
-  height: 150px;
+  height: auto;
   border-radius: 17px;
   background-color: rgb(238, 238, 238);
   border-radius: 20px;
+}
+
+#stemcell-logo, #ronWong-logo{
+  height: 120px;
 }
 
 .companyExp{
@@ -403,6 +408,7 @@ li{
 
   .companyDetail{
     margin: 0px;
+    margin-top: 20px;
   }
 }
 
@@ -485,5 +491,9 @@ li{
     border-radius: 17px;
     background-color: rgb(238, 238, 238);
     border-radius: 10px;
+  }
+
+  #stemcell-logo, #ronWong-logo{
+    height: auto;
   }
 }
