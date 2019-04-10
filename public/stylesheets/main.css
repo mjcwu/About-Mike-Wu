@@ -10,6 +10,10 @@ body {
   font-size: 110%;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 /* ----------- parallax css ----------- */
 
 .parallax {
@@ -120,7 +124,8 @@ body {
   align-content: flex-start;
   justify-content: center;
 
-  position:fixed;
+  position: -webkit-sticky; /* Safari */
+  position: fixed;
   padding:7px;
   bottom:0;
   right:0;
@@ -135,6 +140,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.individualLink:hover{
+  opacity: 0.5;
 }
 
 #Linkedin-logo{
@@ -303,10 +312,18 @@ li{
   font-size: 20px;
 }
 
+.portTitle:hover{
+  opacity: 0.5;
+}
+
 .portImg{
   width: 50%;
   height: 250px;
   margin-right: 20px;
+}
+
+.portImg:hover{
+  opacity: 0.5;
 }
 
 .portImgStyle{
