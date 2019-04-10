@@ -84,8 +84,7 @@ a {
 
 #nameTitle {
   color: #fff;
-  font-size: 65px;
-  letter-spacing: 10px;
+  font-size:60px;
 } 
 
 .aboutMikeSection{
@@ -96,9 +95,6 @@ a {
   width: 56%;
 }
 
-.aboutMikeSection > div{
-  font-size: 17px;
-}
 
 .mikeHeader{
   margin: 3% 5px 5px 5px;
@@ -134,6 +130,14 @@ a {
   bottom:0;
   right:0;
   max-width:550px;
+  
+}
+
+.socailLinkTitle{
+  font-weight: bold;
+  color: #50555c; 
+  opacity: 0.75;
+  font: 12px;
 }
 
 .individualLink{
@@ -144,10 +148,18 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  opacity: 0.4;
+}
+
+.socialGroupLink{
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: center;
 }
 
 .individualLink:hover{
-  opacity: 0.5;
+  opacity: 1;
 }
 
 #Linkedin-logo{
@@ -229,15 +241,15 @@ li{
   padding: 5% 10% 5% 10%;
 }
 
-#expSection > div{
+#expGroup > div{
   font-size: 17px;
+  width: 50%;
 }
 
 #expGroup{
   margin-top: 25px;
   display: flex;
   flex-direction: row;
-  width: 100%;
 }
 
 .expPosition{
@@ -249,22 +261,19 @@ li{
   display: flex;
   flex-direction: column;
   margin: 25px;
-  /* width: 50%; */
 }
 
 .companyLogo{
-  width: 25%;
-  height: 100%;
-  margin: 2% 2% 2% 0px;
+  width: 250px;
+  height: 150px;
   border-radius: 17px;
-  /* padding: 20px; */
   background-color: rgb(238, 238, 238);
   border-radius: 20px;
 }
 
 .companyExp{
   margin: 2% 2% 2% 0px;
-  padding: 20px;
+  padding: 5%;
   background-color: rgb(238, 238, 238);
   border-radius: 20px;
 }
@@ -350,16 +359,132 @@ li{
 }
 
 /* ------------- Mobile CSS  ------------- */
-@media only screen and (max-width: 1300px) {
-  /* For mobile phones: */
+
+
+@media only screen and (max-width: 1025px) {
+  /* For tablet: */
+  .parallax {
+    background-attachment: inherit;
+  }
+
+  #secondBackground{
+    height: 100%; 
+    background-image: none;
+  }
+
+  #thirdBackground{
+    height: 100%; 
+  }
+
   #portfolioGroup {
-    margin-left: 20%;
+    margin: 0px;
+    padding: 5% 10% 5% 10%;
+  }
+  #expGroup{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #expGroup > div{
+    width: 100%;
+  }
+
+  .individualLink{
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.4;
+  }
+
+  .companyDetail{
+    margin: 0px;
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  /* For mobile phones: */
-  #portfolioGroup {
-    margin-left: 2%;
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */  
+  .parallax {
+    background-attachment: inherit;
+  }
+  
+  .mikeDetails > div{
+    font-size: 15px;
+  }
+
+  #expGroup > div{
+    font-size: 15px;
+    width: 100%;
+  }
+
+  #nameSection > *{
+    font-size: 20px;
+  }
+
+  #nameTitle {
+    font-size:60px;
+  } 
+
+  .aboutMikeSection{
+    margin-left: 6%;
+    margin-right: 6%;
+    width: 85%;
+  }
+
+  #portfolioGroup{
+    padding: 20px 10px 20px 10px;
+  }
+
+  .portfolioDiv{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 10px 10px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .portImg{
+    width: 100%;
+    height: 200px;
+  }
+
+  .portImgStyle{
+    width: 100%;
+    height: 200px;
+  }
+
+  .portfolioDescription {
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-top: 17.6px;
+  }
+
+  #secondBackground{
+    height: 100%; 
+    background-image: none;
+  }
+
+  .socailLinkTitle {
+    font-size: 10px;
+  }
+
+  #expSection {
+    padding: 20px 10px 20px 10px;
+    margin: 0% 2% 0% 2%;
+  }
+
+  .companyLogo{
+    width: 125px;
+    height: 75px;
+    border-radius: 17px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
   }
 }
