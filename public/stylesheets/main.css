@@ -273,7 +273,7 @@ li{
 }
 
 #stemcell-logo, #ronWong-logo{
-  height: 120px;
+  height: 150px;
 }
 
 .companyExp{
@@ -334,8 +334,8 @@ li{
 }
 
 .portImg{
-  width: 50%;
-  height: 250px;
+  max-width: 50%;
+  max-height: 250px;
   margin-right: 20px;
 }
 
@@ -344,8 +344,8 @@ li{
 }
 
 .portImgStyle{
-  width: 100%;
-  height: 250px;
+  max-width: 100%;
+  height: auto;
   border-radius: 20px;
   background-size: cover;
   background-position: center;
@@ -408,7 +408,6 @@ li{
 
   .companyDetail{
     margin: 0px;
-    margin-top: 20px;
   }
 }
 
@@ -455,12 +454,12 @@ li{
   }
 
   .portImg{
-    width: 100%;
+    max-width: 100%;
     height: 200px;
   }
 
   .portImgStyle{
-    width: 100%;
+    max-width: 100%;
     height: 200px;
   }
 
@@ -491,9 +490,5 @@ li{
     border-radius: 17px;
     background-color: rgb(238, 238, 238);
     border-radius: 10px;
-  }
-
-  #stemcell-logo, #ronWong-logo{
-    height: auto;
   }
 }
