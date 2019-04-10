@@ -114,6 +114,41 @@ body {
   margin: 0px;
 }
 
+.socialLink{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: center;
+
+  position:fixed;
+  padding:7px;
+  bottom:0;
+  right:0;
+  max-width:550px;
+}
+
+.individualLink{
+  width: 55px;
+  height: 55px;
+  margin: 5px;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#Linkedin-logo{
+  background-image: url('../images/logo/LinkedIn-Logo.png');
+}
+
+#Instagram-logo{
+  background-image: url('../images/logo/Instagram-Logo.png');
+}
+
+#Gmail-logo{
+  background-image: url('../images/logo/Gmail-Logo.png');
+}
+
 .mikeDetails{
   display: flex;
   flex-direction: column;
