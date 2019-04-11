@@ -43,7 +43,7 @@ a {
 
 #thirdBackground{
   background-image: url('../images/vanNightScene.JPG');
-  min-height: 100vh; 
+  min-height: 40vh; 
 }
 
 /* ----------- general section css ----------- */
@@ -238,7 +238,7 @@ li{
 #expSection{
   display: flex;
   flex-direction: column;
-  padding: 5% 10% 5% 10%;
+  padding: 5% 10% 2% 10%;
 }
 
 #expGroup > div{
@@ -265,15 +265,14 @@ li{
 
 .companyLogo{
   max-width: 100%;
-  width: 250px;
   height: auto;
-  border-radius: 17px;
   background-color: rgb(238, 238, 238);
   border-radius: 20px;
 }
 
 #stemcell-logo, #ronWong-logo{
-  height: 150px;
+  max-width: 50%;
+  max-height: 100%;
 }
 
 .companyExp{
@@ -378,6 +377,7 @@ li{
 
   #thirdBackground{
     height: 100%; 
+    min-height: 0px;
   }
 
   #portfolioGroup {
@@ -408,6 +408,7 @@ li{
 
   .companyDetail{
     margin: 0px;
+    margin-bottom: 40px;
   }
 }
 
@@ -485,10 +486,16 @@ li{
   }
 
   .companyLogo{
-    width: 125px;
-    height: 75px;
+    max-width: 100%;
+    height: auto;
     border-radius: 17px;
     background-color: rgb(238, 238, 238);
     border-radius: 10px;
+  }
+
+  #stemcell-logo, #ronWong-logo{
+    width: auto;
+    height: auto;
+    margin: 5px;
   }
 }
