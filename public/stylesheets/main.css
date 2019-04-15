@@ -214,6 +214,15 @@ a {
   text-align: center;
 }
 
+#expTitle{
+  margin: 0px;
+  color: 	#FFDEAD;
+  font-weight: bold;
+  font-family: "Brandon Grotesque";
+  font-size: 24px;
+  text-align: center;
+}
+
 .skillSubTitle{
   margin: 2%;
   font-size: 20px;
@@ -320,6 +329,7 @@ li{
   margin-left: 40%; 
   margin-right: 2%;
   padding: 40px 10px 20px 20px;
+  font-size: 17px;
 }
 
 #portfolioContent{
@@ -441,11 +451,11 @@ li{
   }
   
   .mikeDetails > div{
-    font-size: 15px;
+    font-size: 17px;
   }
 
   #expGroup > div{
-    font-size: 15px;
+    font-size: 17px;
     width: 100%;
   }
 
@@ -515,8 +525,7 @@ li{
   }
 
   #stemcell-logo, #ronWong-logo{
-    width: auto;
-    height: auto;
-    margin: 50px;
+    width: 200px;
+    height: 100px;
   }
 }
