@@ -133,7 +133,7 @@ a {
   bottom:0;
   right:0;
   max-width:550px;
-  
+  z-index: 1;
 }
 
 .socailLinkTitle{
@@ -152,6 +152,7 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0.4;
+  
 }
 
 .socialGroupLink{
@@ -159,6 +160,7 @@ a {
   flex-direction: row;
   align-content: flex-start;
   justify-content: center;
+  
 }
 
 .titleNGibhub{
@@ -301,7 +303,6 @@ li{
   height: auto;
   background-color: rgb(238, 238, 238);
   border-radius: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #stemcell-logo, #ronWong-logo{
@@ -309,6 +310,9 @@ li{
   height: 100px;
   display: flex;
   align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 
