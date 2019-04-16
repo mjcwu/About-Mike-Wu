@@ -364,10 +364,8 @@ li{
   max-width: 50%;
   max-height: 250px;
   margin-right: 20px;
-}
-
-.portImg:hover{
-  opacity: 0.5;
+  position: relative;
+  display: inline-block;
 }
 
 .portImgStyle{
@@ -377,6 +375,19 @@ li{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portImg .hoverPortImg{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.portImg:hover .hoverPortImg{
+  display: inline;
 }
 
 .portfolioDescription{
